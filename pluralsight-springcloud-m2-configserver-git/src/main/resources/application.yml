@@ -1,0 +1,13 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/avklein/pluralsight-spring-cloudconfig-wa-tolls
+          #username: for private
+          #password:
+          search-paths:
+            - 'station*'
